@@ -1,0 +1,19 @@
+ALGORITHM tri_insertion
+VAR
+    t : ARRAY_OF INTEGER[100];
+    i,j,k :INTEGER
+BEGIN
+    j=2
+    WHILE (j=length(t)) DO
+        i=j-1
+        k=t[j]
+    END_WHILE
+    WHILE (i>0, t[i]>k) DO
+    FOR i FROM -1 TO i<j STEP step  DO
+        t[i+1]:=t[i]
+        i:=i-1
+    END_FOR
+        t[i+1]=k
+        j=j+1
+    END_WHILE
+END
